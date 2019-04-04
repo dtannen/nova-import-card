@@ -17,7 +17,7 @@ class BasicImporter implements ToModel, WithValidation, WithHeadingRow
 
     protected $modelClass;
 
-    public function __construct($resource, $attributes, $rules, $modelClass)
+    public function __construct($resource, $attributes, $rules, $modelClass, $request)
     {
         $this->resource = $resource;
         $this->attributes = $attributes;
